@@ -13,9 +13,10 @@ This project has been developed and tested with the RaspberryPi OS (Raspbian GNU
 
 ### Installation
 On your Raspberry Pi, a JDK >= 11 and the tool maven have to be installed. 
-During the assembly step, maven packages the linux SDK for JavaFX instead of the ARM one. Consequently, the pom file removes those dependencies and copies the SDK that should be stored in the assets/javafx/arm directory. You have to download the ARM SDK by yourself from the [Gluon Downloads page](https://gluonhq.com/products/javafx/).
 
-Once done, in the project root dir, type: mvn clean package
+During the assembly step, maven packages the linux SDK for JavaFX instead of the ARM one. Consequently, the pom file removes those dependencies and copies the SDK that should be stored in the assets/javafx/arm directory. You can download the ARM SDK from the [Gluon Downloads page](https://gluonhq.com/products/javafx/). This project provides version 16-ea of the JavaFX Linux/arm32-drm SDK.  
+
+Once everything installed, from the project root dir, type: mvn clean package
 
 ### Running
 
